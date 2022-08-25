@@ -19,6 +19,11 @@ namespace Gilzoide.MainThreadTask
             return Factory.StartNew(action);
         }
 
+        public static Task<T> RunAsync<T>(Func<T> func)
+        {
+            return Factory.StartNew(func);
+        }
+
         public static void InvokeOnMainThread(this Action action)
         {
             Run(action);
@@ -27,6 +32,11 @@ namespace Gilzoide.MainThreadTask
         public static Task InvokeOnMainThreadAsync(this Action action)
         {
             return RunAsync(action);
+        }
+
+        public static Task<T> InvokeOnMainThreadAsync<T>(Func<T> func)
+        {
+            return RunAsync(func);
         }
 
         [RuntimeInitializeOnLoadMethod]

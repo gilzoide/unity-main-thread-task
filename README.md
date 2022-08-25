@@ -13,7 +13,7 @@ Main Thread dispatcher classes, no `GameObject`s attached.
   detected in project
 - `System.Action` extension methods `InvokeOnMainThread` and `InvokeOnMainThreadAsync`
 - No `GameObject`s
-- Simple implementations with less than 50 lines of code each
+- Simple implementations with around 50 lines of code each
 
 
 ## How to install
