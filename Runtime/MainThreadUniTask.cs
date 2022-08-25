@@ -22,6 +22,16 @@ namespace Gilzoide.MainThreadTask
                 action.Invoke();
             }
         }
+
+        public static void InvokeOnMainThread(this Action action, PlayerLoopTiming timing = PlayerLoopTiming.Update)
+        {
+            Run(action, timing);
+        }
+
+        public static UniTask InvokeOnMainThreadAsync(this Action action, PlayerLoopTiming timing = PlayerLoopTiming.Update)
+        {
+            return RunAsync(action, timing);
+        }
     }
 }
 #endif
