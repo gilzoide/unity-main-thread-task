@@ -1,6 +1,6 @@
 # Main Thread Task
 [Task](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task)/[UniTask](https://github.com/Cysharp/UniTask)-based
-Main Thread dispatcher classes, no `GameObject`s attached.
+Main Thread dispatcher classes, no `GameObject`s involved.
 
 
 ## Features
@@ -12,7 +12,7 @@ Main Thread dispatcher classes, no `GameObject`s attached.
 - UniTask-based implementation in `MainThreadUniTask` class, conditionally compiled if UniTask is
   detected in project
 - `System.Action` extension methods `InvokeOnMainThread` and `InvokeOnMainThreadAsync`
-- No `GameObject`s
+- No `GameObject`s involved
 - Simple implementations with around 50 lines of code each
 
 
