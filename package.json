@@ -2,7 +2,7 @@
   "name": "com.gilzoide.main-thread-task",
   "displayName": "Main Thread Task",
   "version": "1.0.0",
-  "description": "Task based Main Thread dispatcher, no GameObjects attached!\n\nUses UniTask automaticaly if found in project or if `HAVE_UNITASK` is defined.",
+  "description": "Task/UniTask-based Main Thread dispatcher, no GameObjects attached",
   "homepage": "https://github.com/gilzoide/unity-main-thread-task",
   "license": "Unlicense",
   "author": {
